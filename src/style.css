@@ -13,11 +13,17 @@ h1 {
     background-color: white ;
 }
 
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding-left: 25px;
+}
+/* Home */
 .column {
     float: left;
     width: 50%;
     padding: 10px;
-    height: 400px;
+    height: 500px; 
 }
 
 .row after {
@@ -30,18 +36,69 @@ h1 {
     font-family:'Times New Roman', Times, serif;
     font-size: 16px;
     color: purple;
-    height: 400px;
+    height: 500px;
     width: auto;
-    padding-top: 60px;
+    padding-top: 10px;
     padding-left: 100px;
     box-align: center;
 }
 
 .happy-staff-patient {
-    height: 400px;
+    height: 500px;
     width: auto;
     box-align: center;
     padding-left: 100px;
+}
+
+/* About-Us */
+.Scott-image {
+    height: 300px;
+    width: auto;
+    box-align: center;
+    padding-left: 100px;
+}
+
+.Scott {
+    font-family:'Times New Roman', Times, serif;
+    font-size:28px;
+    padding-left: 25%;
+}
+
+.Scott-intro {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: purple;
+    height: 200px;
+    width: auto;
+    padding-top: 10px;
+    padding-left: 100px;
+    box-align: center;
+    padding-bottom: 10px;
+}
+
+.Joann-image {
+    height: 300px;
+    width: auto;
+    box-align: center;
+    padding-right: 100px;
+}
+
+.Joann {
+    font-family:'Times New Roman', Times, serif;
+    font-size:28px;
+    padding-left: 15%;
+}
+
+.Joann-intro {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: purple;
+    height: 200px;
+    width: auto;
+    padding-top: 10px;
+    padding-left: 50px;
+    box-align: center;
+    padding-bottom: 10px;
 }
 
 /* FOOTER */
@@ -49,4 +106,7 @@ h1 {
     background: rgb(206, 175, 255);
     color: white;
     text-align: center;    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding-bottom: 10px;
 }
