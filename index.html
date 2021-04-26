@@ -1,58 +1,36 @@
 <head>
-  <title>My Health Story</title>
-  <link href= "src/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>ALS 414 Project</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="src/base.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.botostrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-
-<form class="login" method="get" action="/login">
-  <button type="submit">Login</button>
-</form>
-<form class="createanaccount" method="get" action="/createanaccount">
-  <button type="submit">Create an Account</button>
-</form>
-
-<!-- Body and Image -->
+<nav class="navbar navar-fixed-top">
+  <span class="navbar-brand">
+    <img class="navbar-logo" src="images/myHealthStory-logo.jpg">
+  </span>
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Contact</li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown">Providers</a>
+        <ul class="dropdown-menu">
+          <li>Family</li>
+          <li>Oncology</li>
+          <li>Rare Diseases</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
 <body>
-<h1>
-  <p class="title">My Health Story</p>
-  <div class="row">
-    <div class="column">
-      <p class="home-intro">
-        <br><br>
-        <br><br>
-        Welcome to My Health Story, where all of your medical information is safely stored in one place. You'll never miss your next appointment or worry about not remembering what prescriptions you're currently taking. 
-        <br><br>
-        Here at My Health Story, we'll help you have all of your information readily available for your next appointment, whethere you're going to see your family doctor, a specialist, or an emergency room doctor. 
-        When language barriers and literacy comes between the patients and provider, we step in to help provide a place for them to be able to share the information quickly. 
-        <br><br>
-        My Health Story will help keep patients calm and have one less thing to worry about, as no shuffling of business cards or fumbling of medication bottles are required. This allows for quicker assessment, treatment, and admission or discharge.</p>
-    </div>
-    <div class="column">
-      <img class="happy-staff-patient" src="images/Medical care-rafiki.png">
-    </div> 
+  <div class="container">
+    <h1 class="text-title">My Health Story</h1>
+    <p class="text-body">scott more info here eventually...</p>
   </div>
-</h1>
 </body>
-<!-- // Body and Image -->
 
-<!-- footer -->
-<div class="footer">
-    <div class="footer-content">
-      <div class="footer-section about"></div>
-      <div class="footer-section links"></div>
-      <div class="footer-section contact-form"></div>
-    </div>
-  
-    <div class="footer-bottom">
-      <ul>
-        <a li>English</a></li> |
-        <a li>Spanish</a></li> |
-        <a li>Chinese</a> </li>|
-        <a li>More</a></li>
-      </ul>
-      &copy; myhealthstory.com | Designed by Scott Atkinson & Joann Sy 
-    </div>
-  </div>
-  <!-- // footer -->
