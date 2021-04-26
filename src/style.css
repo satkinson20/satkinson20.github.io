@@ -1,0 +1,52 @@
+.login {
+    text-align: end ;
+    padding-top: 50px;
+    padding-right: 25px;
+}
+
+.createanaccount {
+    text-align: end ;
+    padding-right: 25px;
+}
+
+h1 {
+    background-color: white ;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 400px;
+}
+
+.row after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.home-intro {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: purple;
+    height: 400px;
+    width: auto;
+    padding-top: 60px;
+    padding-left: 100px;
+    box-align: center;
+}
+
+.happy-staff-patient {
+    height: 400px;
+    width: auto;
+    box-align: center;
+    padding-left: 100px;
+}
+
+/* FOOTER */
+.footer-bottom {
+    background: rgb(206, 175, 255);
+    color: white;
+    text-align: center;    
+}
