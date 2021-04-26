@@ -1,3 +1,33 @@
+/* Nav-bar */
+.container {
+    margin: 48px 12px;
+}
+.text-title {
+    color: red
+    font-size: 30px;
+}
+.text-body {
+    color: red;
+    font-size: 18px;
+}
+.text {
+    color: blue;
+    font-size: 24px;
+}
+.navbar {
+    box-shadow: 2px 4px;
+}
+.navbar-logo {
+    height: 50px;
+    width: auto;
+}
+li {
+    font-size: 16px;
+    color: blue;
+    margin: 6px;
+}
+
+/* Login and Create an Account Button */
 .login {
     text-align: end ;
     padding-top: 50px;
