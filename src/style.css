@@ -3,7 +3,7 @@
     margin: 48px 12px;
 }
 .text-title {
-    color: red
+    color: red;
     font-size: 30px;
 }
 .text-body {
@@ -18,7 +18,7 @@
     box-shadow: 2px 4px;
 }
 .navbar-logo {
-    height: 50px;
+    height: 45px;
     width: auto;
 }
 li {
@@ -129,6 +129,47 @@ h1 {
     padding-left: 50px;
     box-align: center;
     padding-bottom: 10px;
+}
+
+/* Contact Us */
+.column-contact {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 500px; 
+    border: 1px solid rgb(146, 129, 129);
+    margin-left: 50px;
+}
+.text-body {
+    margin-left: 50px;
+}
+#inquiry {
+    margin-left: 50px;
+}
+.button-submit{
+    margin-top: 20px;
+    margin-left: 400px;
+    background-color: chartreuse;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.column-map {
+    width: 50%;
+    padding: 10px;
+    height: 500px; 
+    margin-left: 1000px;
+}
+iframe {
+    margin-left: 60px;
+}
+.contact-myhealthstory {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: Purple;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 55px;
+    margin-top: 5px;
 }
 
 /* FOOTER */
