@@ -19,37 +19,20 @@
 }
 .navbar-logo {
     height: 30px;
-    width: auto;
-    
+    width: auto;   
 }
+
 li {
     font-size: 16px;
     color: blue;
     margin: 6px;
 }
 
-/* Login and Create an Account Button */
-.login {
-    text-align: end ;
-    padding-top: 50px;
-    padding-right: 25px;
-}
-
-.createanaccount {
-    text-align: end ;
-    padding-right: 25px;
-}
-
-h1 {
-    background-color: white ;
-}
-
 .title {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
-    padding-left: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  padding-left: 25px;
 }
-
 /* Home */
 .column {
     float: left;
@@ -174,6 +157,35 @@ iframe {
     margin-top: 5px;
 }
 
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+.grid > div {
+  background: pink;
+  padding: 1rem;
+}
+.grid > div::before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
+}
+.grid > div {
+  /* ... */
+  display: grid;
+}
+.grid > div::before,
+.grid > div > img {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.grid > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 /* FOOTER */
 .footer-bottom {
     background: rgb(206, 175, 255);
@@ -183,7 +195,6 @@ iframe {
     font-size: 18px;
     padding-bottom: 10px; 
 }
-
 
 
 /* LOGIN */
