@@ -14,8 +14,21 @@
     <a href="about-us.html">About Us</a>
     <a href="contact-us.html">Contact</a>
     <div class="topnav-right">
-      <a href="login.html">Login/Sign Up</a>
-    </div>
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">My Profile</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="demographics.html">Demographics</a>
+            <a href="daily-log.html">Daily Log</a>
+            <a href="appointments.html">Appointments</a>
+            <a href="medical-history.html">Medical History</a>
+            <a href="providers.html">Providers</a>
+            <a href="prescriptions.html">Prescriptions</a>
+            <a href="reports.html">Reports</a>
+            <a href="insurance.html">Insurance</a>
+            <a href="logout.html">Logout</a>
+          </div>
+      </div>
+    </div>  
   </div>
 </nav>
  
@@ -24,10 +37,27 @@
     <h1>
       <p class="title">Insurance</p>
     </h1>
-    <form action="/insurance_cards.php">
-      <input type="file" id="myFile" name="filename">
-      <input type="submit">
-    </form>
+    <br>
+    <div class="insurance-upload">
+      <p class="text-insurance">Upload your insurance card here!</p><br>
+      <form action="/insurance_cards.php">
+        <input type="file" id="myFile" name="filename"><br>
+        <input type="submit" class="ins-upload-button">
+      </form>
+  </div>
+  <hr>
+  <div class= "container">
+    <div class="row-ins">
+      <div class="column-ins-1">
+        <p>Medicare Insurance Card</p>
+        <img class="insurance-upload-complete" src="images/Medicare_card_new.jpg">
+      </div>
+    </div>
+      <div class="column-ins-2">
+        <p>Medi-Cal Insurance Card</p>
+        <img class="insurance-upload-complete" src="images/24737_02_newBIC_web.png">
+      </div>
+  </div>
 </body>
 <!-- // Body and Image --> 
 
@@ -50,3 +80,5 @@
     </div>
   </div>
   <!-- // footer -->
+
+  <script src="src/scripts.js"></script>
