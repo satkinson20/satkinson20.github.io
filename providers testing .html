@@ -1,0 +1,92 @@
+<head>
+  <title>My Health Story</title>
+  <link href= "src/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<nav class="navbar navar-fixed-top">
+  <span class="navbar-brand">
+    <img class="navbar-logo" src="images/myHealthStory-logo.jpg">
+  </span>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="about-us.html">About Us</a>
+    <a href="contact-us.html">Contact</a>
+    <div class="topnav-right">
+      <a href="login.html">Login/Sign Up</a>
+    </div>
+  </div>
+</nav>
+ 
+ <!-- Body and Image -->
+<body>
+    <h1>
+      <p class="title">Providers</p>
+    </h1>
+    <br>
+    <div class="provider-upload">
+      <p class="text-provider">Upload your provider's business card here!</p><br>
+      <form action="/business_cards.php">
+        <input type="file" id="myFile" name="filename"><br>
+        <button type="submit" onclick="showDiv(accordion)" value="Submit">Submit</button>
+      </form>
+    </div>
+
+    <div id="accordion">
+    <button class="accordion">Primary Care Physician</button>
+     <div class="panel">
+        <p>Dr. Ronald Castillo, MD</p>
+        <img class="insurance-upload-complete" src="images/Health professional team-pana.png">
+        <img class="insurance-upload-complete" src="images/Doctor-Business-card-1-CRC.png">
+     </div>
+     </div>
+
+    <button class="accordion">Ob/Gyn</button>
+    <div class="panel">
+      <p>Dr. Stephanie Castellon, MD</p>
+      <img class="insurance-upload-complete" src="images/Midwives-amico.png">
+    </div>
+
+    <button class="accordion">Radiologist</button>
+    <div class="panel">
+      <p>Dr. Juan Carlos Jones, DO</p>
+      <img class="insurance-upload-complete" src="images/Radiography-pana-2.png">
+    </div>
+
+    <button class="accordion">Cardiologist</button>
+    <div class="panel">
+      <p>Dr. Sandy Huynh, DO</p>
+      <img class="insurance-upload-complete" src="images/Doctor-rafiki.png">
+    </div>
+</body>
+
+
+
+
+
+
+<!-- // Body and Image -->
+
+<!-- footer -->
+<div class="footer">
+    <div class="footer-content">
+      <div class="footer-section about"></div>
+      <div class="footer-section links"></div>
+      <div class="footer-section contact-form"></div>
+    </div>
+  
+    <div class="footer-bottom">
+      <ul>
+        <a li>English</a></li> |
+        <a li>Spanish</a></li> |
+        <a li>Chinese</a> </li>|
+        <a li>More</a></li>
+      </ul>
+      &copy; myhealthstory.com | Designed by Scott Atkinson & Joann Sy 
+    </div>
+  </div>
+  <!-- // footer -->
+
+
+<script src="src/scripts.js"></script>
