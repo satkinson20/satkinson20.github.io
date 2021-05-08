@@ -34,8 +34,15 @@
                   <label class="text-body">Email</label>
                   <input id="email" type="email"><br><br>
                   <label class="text-body">Inquiry</label><br>
-                  <textarea id="inquiry" name="inquiry" rows="4" cols="27"></textarea><br>
-                  <button class="button-submit">Submit</button>
+                  <textarea id="inquiry" name="inquiry" rows="4" cols="27"></textarea><br><br>
+                  <button onclick="myFunction()">Submit</button>
+                  <p id="submit"></p>
+                  <script>
+                  function myFunction() {
+                   (confirm("Thank you for your inquiry. We will respond to you within 2 business days!")) 
+                    document.getElementById("submit").innerHTML = txt;
+                  }
+                  </script>
               </div>
               </div>
             <div class="column-map">
