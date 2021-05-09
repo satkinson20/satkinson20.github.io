@@ -1,68 +1,65 @@
 <head>
-    <title>My Health Story</title>
-    <link href= "src/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
+  <title>My Health Story</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link href= "src/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
 
-  <nav class="navbar navar-fixed-top">
-    <span class="navbar-brand">
-      <img class="navbar-logo" src="images/myHealthStory-logo.jpg">
-    </span>
-    <div class="topnav">
-      <a href="index.html">Home</a>
-      <a href="about-us.html">About Us</a>
-      <a href="contact-us.html">Contact</a>
-      <div class="topnav-right">
-        <a href="login.html">Login/Sign Up</a>
-      </div>
-    </div>
-  </nav>
-
-  
-
- <!-- Body and Map -->
- <body>
-    <h1>
-        <p class="title">Contact Us</p>
-        <div class="row">
-            <div class="column-contact">
-              <div class="container-contact"><br>
-                  <label class="text-body">Name</label>
-                  <input id="name" type="text"><br><br>
-                  <label class="text-body">Email</label>
-                  <input id="email" type="email"><br><br>
-                  <label class="text-body">Inquiry</label><br>
-                  <textarea id="inquiry" name="inquiry" rows="4" cols="27"></textarea><br>
-                  <button class="button-submit">Submit</button>
-              </div>
-              </div>
-            <div class="column-map">
-                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=15TOs6OH_dmraOBQr8oZjkPYUN5CS03bb" width="600" height="400px"></iframe>
-                <p class="contact-myhealthstory">My Health Story<br>535 Watson Drive<br>Claremont, CA 91711<br>(323) 455-4029</p>
-            </div> 
-        </div> 
-    </h1>
- </body>
- <!-- // Body and Map -->
-
- <!-- footer -->
- <div class="footer">
-    <div class="footer-content">
-      <div class="footer-section about"></div>
-      <div class="footer-section links"></div>
-      <div class="footer-section contact-form"></div>
-    </div>
-  
-    <div class="footer-bottom">
-      <ul>
-        <a li>English</a></li> |
-        <a li>Spanish</a></li> |
-        <a li>Chinese</a> </li>|
-        <a li>More</a></li>
-      </ul>
-      &copy; myhealthstory.com | Designed by Scott Atkinson & Joann Sy 
+<nav class="navbar navar-fixed-top">
+  <span class="navbar-brand">
+    <img class="navbar-logo" src="images/myHealthStory-logo.jpg">
+  </span>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="about-us.html">About Us</a>
+    <a class="active-tab" href="contact-us.html">Contact</a>
+    <div id="google_translate_element" class="translate-navbar">
+    <div class="topnav-right">
+      <a href="login.html">Login/Sign Up</a>
     </div>
   </div>
-  <!-- // footer -->
+</nav>
+
+
+
+<!-- Body and Map -->
+<body>
+  <h1>
+      <p class="title">Contact Us</p>
+      <div class="row">
+          <div class="column-contact">
+            <div class="container-contact"><br>
+                <label class="text-body">Name</label>
+                <input id="name" type="text"><br><br>
+                <label class="text-body">Email</label>
+                <input id="email" type="email"><br><br>
+                <label class="text-body">Inquiry</label><br>
+                <textarea id="inquiry" name="inquiry" rows="4" cols="27"></textarea><br><br>
+                <button onclick="contactUs()">Submit</button>
+                <p id="inquiry-submit"></p>
+            </div>
+            </div>
+          <div class="column-map">
+            <div class="container-map">
+              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=15TOs6OH_dmraOBQr8oZjkPYUN5CS03bb" width="600" height="400px"></iframe>
+              <p class="contact-myhealthstory">My Health Story<br>535 Watson Drive<br>Claremont, CA 91711<br>(323) 455-4029</p>
+            </div>
+          </div> 
+      </div> 
+  </h1>
+</body>
+<!-- // Body and Map -->
+<br><br><br><br>
+<!-- footer -->
+<div class="footer">
+  <div class="footer-bottom">
+    &copy; myhealthstory.com | Designed by Scott Atkinson & Joann Sy 
+  </div>
+</div>
+<!-- // footer -->
+
+<script type="text/javascript" src="src/scripts.js"></script>

@@ -1,21 +1,36 @@
 <head>
   <title>My Health Story</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href= "src/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <nav class="navbar navar-fixed-top">
   <span class="navbar-brand">
     <img class="navbar-logo" src="images/myHealthStory-logo.jpg">
   </span>
   <div class="topnav">
-    <a class="active" href="index.html">Home</a>
+    <a href="index.html">Home</a>
     <a href="about-us.html">About Us</a>
     <a href="contact-us.html">Contact</a>
-    <div class="topnav-right">
-      <a href="overview.html">Overview Page</a>
-    </div>
+    <div id="google_translate_element" class="translate-navbar">
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">My Profile</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="demographics.html">Demographics</a>
+          <a class="active-tab" href="daily-log.html">Daily Log</a>
+          <a href="appointments.html">Appointments</a>
+          <a href="medical-history.html">Medical History</a>
+          <a href="providers.html">Providers</a>
+          <a href="prescriptions.html">Prescriptions</a>
+          <a href="reports.html">Reports</a>
+          <a href="insurance.html">Insurance</a>
+          <a href="logout.html">Logout</a>
+        </div>
+    </div> 
   </div>
 </nav>
 
@@ -24,25 +39,77 @@
     <h1>
       <p class="title">Daily Log</p>
     </h1>
+
+<div class="dailylog">
+  <label for="date-log">Date:</label>
+  <input type="date" id="dateLog" name="date-log" required><br>
+  <label for="time-log">Time:</label>
+  <input type="time" id="timeLog" name="time-log"><br>
+  <label for="bloodpressure">Blood Pressure:</label>
+  <input type="number" id="bloodpressure" name="bloodpressure">
+  <label for="bloodsugar">Blood Sugar:</label>
+  <input type="number" id="bloodsugar" name="bloodsugar">
+  <label for="heartrate">Heart Rate:</label>
+  <input type="number" id="heartrate" name="heartrate">
+  <button onclick="saveresult()">Submit</button>
+</div>
+<hr>
+<div class="add-tracker">
+  <input type="checkbox" id="bloodpressure" name="bloodpressure" value="Blood Pressure">
+  <label for="bloodpressure"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+</div>
+<hr><br>
+
+<table>
+  <tr>
+  <td>Systolic (mmHg)</td>
+  <td>Diastolic (mmHg)</td>
+  <td>Result</td>
+  </tr>
+  <tr>
+  <td><input name="number1" type="text" size=10 id='num1'/></td>
+  <td><input name="number2" type="text" size=10 id='num2'/></td>
+  <td><p id="result"></p></td>
+  </tr>
+  <tr>
+  <td colspan="3">
+  <button onclick="showresult()">Submit</button>
+  </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>Blood Pressure</td>
+    <td>Blood Sugar</td>
+    <td>Heart Rate</td>
+  </tr>
+  <tr>
+    <td><p id="bloodpressure-1"></p></td>
+    <td><p id="bloodsugar-1"></p></td>
+    <td><p id="heartrate-1"></p></td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
 </body>
 <!-- // Body and Image -->
 
 <!-- footer -->
 <div class="footer">
-    <div class="footer-content">
-      <div class="footer-section about"></div>
-      <div class="footer-section links"></div>
-      <div class="footer-section contact-form"></div>
-    </div>
-  
     <div class="footer-bottom">
-      <ul>
-        <a li>English</a></li> |
-        <a li>Spanish</a></li> |
-        <a li>Chinese</a> </li>|
-        <a li>More</a></li>
-      </ul>
       &copy; myhealthstory.com | Designed by Scott Atkinson & Joann Sy 
     </div>
   </div>
   <!-- // footer -->
+
+<script type="text/javascript" src="src/scripts.js"></script>  

@@ -1,49 +1,73 @@
 <head>
-    <title>My Health Story</title>
-    <link href= "src/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
-  <nav class="navbar navar-fixed-top">
-    <span class="navbar-brand">
-      <img class="navbar-logo" src="images/myHealthStory-logo.jpg">
-    </span>
-    <div class="topnav">
-      <a class="active" href="index.html">Home</a>
-      <a href="about-us.html">About Us</a>
-      <a href="contact-us.html">Contact</a>
-      <div class="topnav-right">
-        <a href="overview.html">Overview Page</a>
-      </div>
-    </div>
-  </nav>
+  <title>My Health Story</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href= "src/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<nav class="navbar navar-fixed-top">
+  <span class="navbar-brand">
+    <img class="navbar-logo" src="images/myHealthStory-logo.jpg">
+  </span>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="about-us.html">About Us</a>
+    <a href="contact-us.html">Contact</a>
+    <div id="google_translate_element" class="translate-navbar">
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">My Profile</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="demographics.html">Demographics</a>
+          <a href="daily-log.html">Daily Log</a>
+          <a href="appointments.html">Appointments</a>
+          <a href="medical-history.html">Medical History</a>
+          <a href="providers.html">Providers</a>
+          <a href="prescriptions.html">Prescriptions</a>
+          <a class="active-tab" href="reports.html">Reports</a>
+          <a href="insurance.html">Insurance</a>
+          <a href="logout.html">Logout</a>
+        </div>
+    </div> 
+  </div>
+</nav>
  
 <!-- Body and Image -->
 <body>
     <h1>
       <p class="title">Medical Reports</p>
     </h1>
+    <div class="container-reports" style="margin: 50px;">
+      <h2>
+        <p>Request Medical Records from Providers</p>
+      </h2>
+      <h4>
+        <br><p>Requesting your medical records to store them with My Health Story has never been easier. Just fill out the <a href="https://eforms.com/images/2016/10/California-HIPAA-Medical-Release-Form.pdf" target="_blank">Medical Records Release Authorization Form </a>and send it in to your provider's clinic or hospital. Once they receive and approve it, they will send us your medical records and we will upload it here in your profile. It's just that <i>simple</i>.</p>
+      </h4>
+    </div>
+    <div class="container-reports" style="margin: 50px;">
+      <h2>
+        <p>Upload Your Medical Records</p>
+      </h2><br>
+      <label for="report-type">Report Type:</label>
+      <input type="text" id="specialty" name="specialty" required><br><br>
+      <label for="providers-name">Provider's Name:</label>
+      <input type="text" id="providers-name" name="providers-name" required><br><br>
+      <input type="file" id="myFile" name="filename"><br>
+      <button class="submit">Submit</button>
+    </div>
 </body>
 <!-- // Body and Image -->
-    
 
+<br><br>
 <!-- footer -->
 <div class="footer">
-    <div class="footer-content">
-      <div class="footer-section about"></div>
-      <div class="footer-section links"></div>
-      <div class="footer-section contact-form"></div>
-    </div>
-  
-    <div class="footer-bottom">
-      <ul>
-        <a li>English</a></li> |
-        <a li>Spanish</a></li> |
-        <a li>Chinese</a> </li>|
-        <a li>More</a></li>
-      </ul>
+    <div class="footer-bottom"></div>
       &copy; myhealthstory.com | Designed by Scott Atkinson & Joann Sy 
     </div>
   </div>
   <!-- // footer -->
+
+<script type="text/javascript" src="src/scripts.js"></script>  
