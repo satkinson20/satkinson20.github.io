@@ -10,11 +10,11 @@
     <img class="navbar-logo" src="images/myHealthStory-logo.jpg">
   </span>
   <div class="topnav">
-    <a class="active" href="#home">Home</a>
+    <a class="active" href="index.html">Home</a>
     <a href="about-us.html">About Us</a>
     <a href="contact-us.html">Contact</a>
     <div class="topnav-right">
-      <a href="login.html">Login/Sign Up</a>
+      <a href="overview.html">Overview Page</a>
     </div>
   </div>
 </nav>
@@ -25,6 +25,80 @@
       <p class="title">Appointments</p>
     </h1>
 </body>
+<div class="container">
+  <div class="wrapper">
+    <div class="bg"></div>
+    <h1>Add New Appointment</h1>
+    <form action="">
+      <div class="boxes">
+      <label for="providerorclinicname">Provider or Clinic Name:</label>
+      <input type="text"/>
+        </div>
+      <div class="boxes">
+      <label for="reasonforvisit">Reason for Visit:</label>
+      <input type="text"/>
+        </div>
+      <div class="time-wrapper">
+        <div class="boxes">
+        <label for="starting">Location:</label>
+        <input type="text" placeholder="City and State"/>
+          </div>
+        <div class="boxes">
+        <label for="ending">Date:</label>
+        <input type="text" placeholder="XX/XX/XXXX"/>
+          </div>
+        <div class="boxes">
+        <label for="duration">Time:</label>
+        <input type="text" placeholder="4:00"/>
+          </div>
+        </div>
+      <div class="boxes">
+      <label for="notes">Notes:</label>
+        <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+        </div>
+      <div class="boxes">
+      <button class="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+  </div>
+  <h1>My Appointments</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Provider or Clinic Name</th>
+        <th scope="col">Appointment Date & Time</th>
+        <th scope="col">Reason for Visit</th>
+        <th scope="col">Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Account">Dr. Castillo</td>
+        <td data-label="Due Date">7/31/2021 13:00</td>
+        <td data-label="Amount">PCP Follow Up</td>
+        <td data-label="Period">Bring insurance card</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Account">Dr. Hernandez</td>
+        <td data-label="Due Date">6/26/2021 10:00</td>
+        <td data-label="Amount">Blood Test</td>
+        <td data-label="Period">Ask doctor about procedure</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Account">Dr. Smith</td>
+        <td data-label="Due Date">04/05/2021 9:00</td>
+        <td data-label="Amount">Annual Checkup</td>
+        <td data-label="Period">None</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Acount">Dr. Mayo</td>
+        <td data-label="Due Date">01/21/2021 10:30</td>
+        <td data-label="Amount">Echocardiogram</td>
+        <td data-label="Period">None</td>
+      </tr>
+    </tbody>
+  </table>
 <!-- // Body and Image --> 
 
 <!-- footer -->
@@ -46,3 +120,6 @@
     </div>
   </div>
   <!-- // footer -->
+
+
+<script src="src/scripts.js"></script>
