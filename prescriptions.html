@@ -37,17 +37,31 @@
  
 <!-- Body and Image -->
 <body>
-    <h1>
-      <p class="title">Prescriptions</p>
-    </h1>
-</body>
-<div class="insurance-upload">
-  <p class="text-insurance">Upload your prescriptions here!</p><br>
-  <form action="/insurance_cards.php">
-    <input type="file" id="myFile" name="filename"><br>
-    <input type="submit" class="ins-upload-button">
-  </form>
+  <h1>
+    <p class="title">Prescriptions</p>
+  </h1>
+  <br>
+  <div class="prescription-upload">
+    <p class="text-prescription">Upload your prescriptions here!</p><br>
+    <form action="/prescriptions.php">
+      <input type="file" id="myFile" name="filename"><br>
+      <button type="button" onclick="showIns()">Submit</button>
+    </form>
 </div>
+<hr>
+<div id="container-ins" class= "container-ins">
+  <div class="row-ins">
+    <div class="column-ins-1">
+      <p>Lisinopril Prescription</p>
+      <img class="prescription-upload-complete" src="images/lisionpril_prescription.png">
+    </div>
+  </div>
+    <div class="column-ins-2">
+      <p>Lisinopril</p>
+      <img class="prescription-upload-complete" src="images/lisinopril_tablet_prescription.jpeg">
+    </div>
+</div>
+</body>
 <br>
 <table class="table">
   <thead>

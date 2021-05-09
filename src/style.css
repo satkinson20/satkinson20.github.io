@@ -681,3 +681,25 @@ table th {
   color: rgba(255,255,255,.68);
   border: .075em solid rgba(255,255,255,.1);
 }
+
+/* Prescriptions */
+.text-prescription {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+.prescription-upload {
+  margin-left: 25px;
+}
+.ins-upload-button {
+  margin-left: 0px;
+  background-color: rgba(255, 255, 255, 0.87);
+  border-radius: 5px;
+  font-size: 12px;
+}
+.prescription-upload-complete {
+  height: 300px;
+  width: auto;
+  box-align: center;
+  padding-right: 25px;
+}
