@@ -129,13 +129,13 @@ li {
     height: 300px;
     width: auto;
     box-align: center;
-    padding-left: 100px;
+    padding-left: 200px
 }
 
 .Scott {
     font-family:'Times New Roman', Times, serif;
     font-size:28px;
-    padding-left: 25%;
+    padding-left: 210px;
 }
 
 .Scott-intro {
@@ -154,13 +154,13 @@ li {
     height: 300px;
     width: auto;
     box-align: center;
-    padding-right: 100px;
+    padding-left: 100px;
 }
 
 .Joann {
     font-family:'Times New Roman', Times, serif;
     font-size:28px;
-    padding-left: 15%;
+    padding-left: 165px;
 }
 
 .Joann-intro {
@@ -181,7 +181,6 @@ li {
     width: 48%;
     padding: 10px;
     height: 500px; 
-    border: 1px solid rgb(161, 24, 24);
     margin-left: 25px;
 }
 .container-contact {
@@ -197,9 +196,9 @@ li {
 .column-map {
   float: right;
   width: 48%;
-  padding: 15px;
+  padding-top: 15px;
+  padding-left: 150px;
   height: 500px; 
-  border: 1px solid rgb(146, 129, 129);
   margin-right: 25px;
 }
 iframe {
@@ -209,17 +208,17 @@ iframe {
     font-family:'Times New Roman', Times, serif;
     font-size: 20px;
     color: Purple;
-    text-align: center;
-    margin-left: 10px;
-    margin-right: 25px;
+    margin-left:250px;
     margin-top: 5px;
 }
 
 /* Grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 3rem;
+  margin: 50px;
+  padding: 50px;
 }
 .grid > div {
   background: pink;
@@ -270,26 +269,31 @@ iframe {
   display: none;
 }
 
+.ins-content {
+  padding: 50px;
+}
 .column-ins-1 {
   float: left;
-  width: 50%;
+  width: 45%;
   padding: center;
-  height: 500px; 
-  border: 1px solid rgb(146, 129, 129);
+  margin-left: 25px;
+  height: 425px; 
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
   background-color: white;
+
 }
 
 .column-ins-2 {
   float: right;
-  width: 50%;
+  width: 45%;
   padding: center;
-  height: 500px; 
-  border: 1px solid rgb(146, 129, 129);
+  height: 425px; 
   font-family: 'Times New Roman', Times, serif;
   font-size: 18px;
   background-color: white;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .topnav {
@@ -614,15 +618,19 @@ table th {
 
 .demo-title {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
+  padding-left: 25px;
+  margin-left: 25px;
+  font-family:'Times New Roman', Times, serif;
 }
 
 .demographic-form {
   display: flex;
-  justify-content: center;
-  align-items: center;
- 
+  justify-content: left;
+  align-items: left;
+  padding-left: 50px;
+  margin-left: 50px;
 }
 
 .emergency-contact-form {
@@ -673,8 +681,6 @@ table th {
   display: none;
   overflow: hidden;
 }
-
-/* Daily Log */
 
 /* Log Out */
 .logout-body {
