@@ -477,6 +477,24 @@ body {
       text-align: center;
       font-size: 14px; }
 
+.login-button { 
+  width: 278px; 
+  height: 41px; 
+  width: 100%; 
+  padding: .8em 0 10px .8em; 
+  background-color: rgb(206, 175, 255); 
+  border: none; 
+  color: #fff; 
+  cursor: pointer; 
+  text-transform: uppercase; 
+  transition-duration: 0.2s; 
+  cursor: pointer;
+}
+
+.login-button:hover { 
+  background-color: #4FDA8C; 
+  color: white;
+}
 
 /*NAVBAR FOR LOGIN/CREATE ACCOUNT (CHANGE IF NOT LIKED?)
 /* Add a black background color to the top navigation */
