@@ -45,6 +45,11 @@ function contactUs() {
 	 document.getElementById("inquiry-submit").innerHTML = txt;
    }
 
+ /* Appointment */
+function MakeAppointment() {
+	(confirm("Your appointment has been successfully added!")) 
+	 document.getElementById("make-appointment").innerHTML = txt;
+   }  
 /* Providers */
 var acc = document.getElementsByClassName("accordion");
 var i;

@@ -39,69 +39,93 @@
     <h1>
       <p class="title">Daily Log</p>
     </h1>
-
-<div class="dailylog">
-  <label for="date-log">Date:</label>
-  <input type="date" id="dateLog" name="date-log" required><br>
-  <label for="time-log">Time:</label>
-  <input type="time" id="timeLog" name="time-log"><br>
-  <label for="bloodpressure">Blood Pressure:</label>
-  <input type="number" id="bloodpressure" name="bloodpressure">
-  <label for="bloodsugar">Blood Sugar:</label>
-  <input type="number" id="bloodsugar" name="bloodsugar">
-  <label for="heartrate">Heart Rate:</label>
-  <input type="number" id="heartrate" name="heartrate">
-  <button onclick="saveresult()">Submit</button>
+<hr>
+<div class="bp-tool-kit" style="margin-left: 25px; font-family:'Times New Roman', Times, serif;">
+  <h2><p>Blood Pressure Tool</p></h2>
+  <div>
+    <table class="bp-tool" style="margin-left: 25px;">
+      <tr>
+      <td>Systolic (mmHg)</td>
+      <td>Diastolic (mmHg)</td>
+      <td>Result</td>
+      </tr>
+      <br>
+      <tr>
+      <td><input name="number1" type="text" size=10 id='num1'/></td>
+      <td><input name="number2" type="text" size=10 id='num2'/></td>
+      <td><p id="result"></p></td>
+      </tr>
+      <tr>
+      <td colspan="3"><br>
+      <button onclick="showresult()">Submit</button>
+      </td>
+      </tr>
+    </table>    
+  </div>
 </div>
 <hr>
-<div class="add-tracker">
-  <input type="checkbox" id="bloodpressure" name="bloodpressure" value="Blood Pressure">
-  <label for="bloodpressure"> I have a bike</label><br>
-  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-  <label for="vehicle1"> I have a bike</label><br>
+<div>
+  <h2 style="margin-left: 25px; font-family:'Times New Roman', Times, serif;">Log Entry</h2>
 </div>
-<hr><br>
-
-<table>
-  <tr>
-  <td>Systolic (mmHg)</td>
-  <td>Diastolic (mmHg)</td>
-  <td>Result</td>
-  </tr>
-  <tr>
-  <td><input name="number1" type="text" size=10 id='num1'/></td>
-  <td><input name="number2" type="text" size=10 id='num2'/></td>
-  <td><p id="result"></p></td>
-  </tr>
-  <tr>
-  <td colspan="3">
-  <button onclick="showresult()">Submit</button>
-  </td>
-  </tr>
+<div class="dailylog" style="margin: 50px;">
+  <label for="date-log">Date:</label>
+  <input type="date" id="dateLog" name="date-log" required><br><br>
+  <label for="time-log">Time:</label>
+  <input type="time" id="timeLog" name="time-log"><br><br>
+  <label for="bloodpressure">Blood Pressure:</label>
+  <input type="text" id="bloodpressure" name="bloodpressure" placeholder="xxx/xx"><br><br>
+  <label for="bloodsugar">Blood Sugar:</label>
+  <input type="number" id="bloodsugar" name="bloodsugar"><br><br>
+  <label for="heartrate">Heart Rate:</label>
+  <input type="number" id="heartrate" name="heartrate"><br><br>
+  <button onclick="showLog()">Submit</button>
+  <p id=log-content></p>
+</div>
+<hr>
+<h2 style="margin-left: 25px; font-family:'Times New Roman', Times, serif;">My Daily Log</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="date-log">Date</th>
+      <th scope="time-log">Time</th>
+      <th scope="bp-log">Blood Pressure</th>
+      <th scope="glu-log">Blood Sugar</th>
+      <th scope="hr-log">Heart Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="date-log">05/9/21</td>
+      <td data-label="time-log">13:00</td>
+      <td data-label="bp-log">119/79</td>
+      <td data-label="glu-log">90</td>
+      <td data-label="hr-log">70</td>
+    </tr>
+    <tr>
+      <td data-label="date-log">05/9/21</td>
+      <td data-label="time-log">07:00</td>
+      <td data-label="bp-log">135/85</td>
+      <td data-label="glu-log">80</td>
+      <td data-label="hr-log">60</td>
+    </tr>
+    <tr>
+      <td data-label="date-log">05/8/21</td>
+      <td data-label="time-log">13:00</td>
+      <td data-label="bp-log">120/80</td>
+      <td data-label="glu-log">95</td>
+      <td data-label="hr-log">67</td>
+    </tr>
+    <tr>
+      <td data-label="date-log">05/8/21</td>
+      <td data-label="time-log">07:00</td>
+      <td data-label="bp-log">128/84</td>
+      <td data-label="glu-log">82</td>
+      <td data-label="hr-log">63</td>
+    </tr>
+  </tbody>
 </table>
-
-<table>
-  <tr>
-    <td>Blood Pressure</td>
-    <td>Blood Sugar</td>
-    <td>Heart Rate</td>
-  </tr>
-  <tr>
-    <td><p id="bloodpressure-1"></p></td>
-    <td><p id="bloodsugar-1"></p></td>
-    <td><p id="heartrate-1"></p></td>
-  </tr>
-</table>
-
-
-
-
-
-
-
-
-
 </body>
+<br>br>
 <!-- // Body and Image -->
 
 <!-- footer -->

@@ -44,6 +44,8 @@
   <div class="prescription-upload">
     <p class="text-prescription">Upload your prescriptions here!</p><br>
     <form action="/prescriptions.php">
+      <label for="rx-name">Prescription Name:</label>
+      <input type="text" id="rx-name" name="rx-name"><br><br>
       <input type="file" id="myFile" name="filename"><br>
       <button type="button" onclick="showIns()">Submit</button>
     </form>
@@ -52,13 +54,17 @@
 <div id="container-ins" class= "container-ins">
   <div class="row-ins">
     <div class="column-ins-1">
+      <div class="ins-content">
       <p>Lisinopril Prescription</p>
       <img class="prescription-upload-complete" src="images/lisionpril_prescription.png">
     </div>
+    </div>
   </div>
     <div class="column-ins-2">
+      <div class="ins-content">
       <p>Lisinopril</p>
       <img class="prescription-upload-complete" src="images/lisinopril_tablet_prescription.jpeg">
+    </div>
     </div>
 </div>
 </body>
