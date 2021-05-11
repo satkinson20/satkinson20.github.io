@@ -1,3 +1,4 @@
+<!-- HEAD -->
 <head>
   <title>My Health Story</title>
   <meta charset="utf-8">
@@ -8,6 +9,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
+<!-- // HEAD -->
+
+<!-- NAVBAR -->
 <nav class="navbar navar-fixed-top">
   <span class="navbar-brand">
     <img class="navbar-logo" src="images/myHealthStory-logo.jpg">
@@ -31,14 +35,15 @@
           <a href="logout.html">Logout</a>
         </div>
     </div> 
+    </div>
   </div>
 </nav>
-
+<!-- // NAVBAR -->
  
-<!-- Body and Image -->
+<!-- PRESCRIPTION BODY -->
 <body>
   <h1>
-    <p class="title">Prescriptions</p>
+    <p class="title">Prescriptions</p><hr>
   </h1>
   <br>
   <div class="prescription-upload">
@@ -49,75 +54,75 @@
       <input type="file" id="myFile" name="filename"><br>
       <button type="button" onclick="showIns()">Submit</button>
     </form>
-</div>
-<hr>
-<div id="container-ins" class= "container-ins">
-  <div class="row-ins">
-    <div class="column-ins-1">
-      <div class="ins-content">
-      <p>Lisinopril Prescription</p>
-      <img class="prescription-upload-complete" src="images/lisionpril_prescription.png">
-    </div>
-    </div>
   </div>
+  <hr>
+  <div id="container-ins" class= "container-ins">
+    <div class="row-ins">
+      <div class="column-ins-1">
+        <div class="ins-content">
+        <p>Lisinopril Prescription</p>
+        <img class="prescription-upload-complete" src="images/lisionpril_prescription.png">
+        </div>
+      </div>
+    </div>
     <div class="column-ins-2">
       <div class="ins-content">
       <p>Lisinopril</p>
       <img class="prescription-upload-complete" src="images/lisinopril_tablet_prescription.jpeg">
-    </div>
-    </div>
-</div>
-</body>
-<br>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Name</th>
-      <th scope="col">Doseage</th>
-      <th scope="col">Time per Day</th>
-      <th scope="col">Date Prescribed</th>
-      <th scope="col">Refills Remaining</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td data-label="Account">Pantoprazole</td>
-      <td data-label="Due Date">5mg</td>
-      <td data-label="Amount">1 before breakfast</td>
-      <td data-label="Period">3/31/2016</td>
-      <td data-label="Period">1</td>
-    </tr>
-    <tr>
-      <td scope="row" data-label="Account">Hydralazine</td>
-      <td data-label="Due Date">25mg</td>
-      <td data-label="Amount">2x/day</td>
-      <td data-label="Period">02/01/2016</td>
-      <td data-label="Period">2</td>
-    </tr>
-    <tr>
-      <td scope="row" data-label="Account">Vitamin D3</td>
-      <td data-label="Due Date">5000UI</td>
-      <td data-label="Amount">1x day</td>
-      <td data-label="Period">02/29/2016</td>
-      <td data-label="Period">3</td>
-    </tr>
-    <tr>
-      <td scope="row" data-label="Acount">Lisinopril</td>
-      <td data-label="Due Date">10mg</td>
-      <td data-label="Amount">Before bed</td>
-      <td data-label="Period">01/01/2016</td>
-      <td data-label="Period">2</td>
-    </tr>
-  </tbody>
-</table>
-<!-- // Body and Image -->
-
-<!-- footer -->
-<div class="footer">
-    <div class="footer-bottom">
-      &copy; myhealthstory.com | Designed by Scott Atkinson & Joann Sy 
+      </div>
     </div>
   </div>
-  <!-- // footer -->
+  <br>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Doseage</th>
+        <th scope="col">Time per Day</th>
+        <th scope="col">Date Prescribed</th>
+        <th scope="col">Refills Remaining</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Account">Pantoprazole</td>
+        <td data-label="Due Date">5mg</td>
+        <td data-label="Amount">1 before breakfast</td>
+        <td data-label="Period">3/31/2016</td>
+        <td data-label="Period">1</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Account">Hydralazine</td>
+        <td data-label="Due Date">25mg</td>
+        <td data-label="Amount">2x/day</td>
+        <td data-label="Period">02/01/2016</td>
+        <td data-label="Period">2</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Account">Vitamin D3</td>
+        <td data-label="Due Date">5000UI</td>
+        <td data-label="Amount">1x day</td>
+        <td data-label="Period">02/29/2016</td>
+        <td data-label="Period">3</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Acount">Lisinopril</td>
+        <td data-label="Due Date">10mg</td>
+        <td data-label="Amount">Before bed</td>
+        <td data-label="Period">01/01/2016</td>
+        <td data-label="Period">2</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+<!-- // PRESCRIPTION BODY -->
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-bottom">
+    &copy; myhealthstory.com | Designed by Scott Atkinson & Joann Sy 
+  </div>
+</div>
+<!-- // FOOTER -->
 
 <script type="text/javascript" src="src/scripts.js"></script>
