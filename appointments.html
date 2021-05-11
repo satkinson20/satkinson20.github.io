@@ -1,3 +1,4 @@
+<!-- HEAD -->
 <head>
   <title>My Health Story</title>
   <meta charset="utf-8">
@@ -8,6 +9,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
+<!-- // HEAD -->
+
+<!-- NAVBAR -->
 <nav class="navbar navar-fixed-top">
   <span class="navbar-brand">
     <img class="navbar-logo" src="images/myHealthStory-logo.jpg">
@@ -30,14 +34,16 @@
           <a href="insurance.html">Insurance</a>
           <a href="logout.html">Logout</a>
         </div>
+    </div>
     </div> 
   </div>
 </nav>
- 
-<!-- Body and Image -->
+<!-- // NAVBAR -->
+
+<!-- APPT FORM AND APPT TABLE BODY -->
 <body>
     <h1>
-      <p class="title">Appointments</p>
+      <p class="title">Appointments</p><hr>
     </h1>
 </body>
 <div class="container">
@@ -46,36 +52,37 @@
     <h1>Add New Appointment</h1>
     <form action="">
       <div class="boxes">
-      <label for="providerorclinicname">Provider or Clinic Name:</label>
-      <input type="text"/>
-        </div>
+        <label for="providerorclinicname">Provider or Clinic Name:</label>
+        <input type="text"/>
+      </div>
       <div class="boxes">
-      <label for="reasonforvisit">Reason for Visit:</label>
-      <input type="text"/>
-        </div>
+        <label for="reasonforvisit">Reason for Visit:</label>
+        <input type="text"/>
+      </div>
       <div class="time-wrapper">
         <div class="boxes">
-        <label for="appt-location">Location:</label>
-        <input type="text" placeholder="City and State"/>
-          </div>
+          <label for="appt-location">Location:</label>
+          <input type="text" placeholder="City and State"/>
+        </div>
         <div class="boxes">
           <label for="appointment-date">Date:</label>
           <input type="date" id="appointmentDate" name="appointment-date" ><br>
-          </div>
+        </div>
         <div class="boxes">
           <label for="appt-time">Time:</label>
           <input type="time" id="apptTime" name="appt-time"><br>
-          </div>
         </div>
+      </div>
       <div class="boxes">
-      <label for="notes">Notes:</label>
+        <label for="notes">Notes:</label>
         <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
-        </div>
+      </div>
       <div class="boxes">
-      <button class="submit">Submit</button>
+        <button onclick="MakeAppointment()">Submit</button>
+        <p id="make-appointment"></p>
       </div>
     </form>
-  </div>
+    </div>
   </div>
   <h1>My Appointments</h1>
   <table class="table">
@@ -114,14 +121,16 @@
       </tr>
     </tbody>
   </table>
-<!-- // Body and Image --> 
+<!-- // APPT FORM AND APPT TABLE BODY -->
+ 
 <br><br>
-<!-- footer -->
+
+<!-- FOOTER -->
 <div class="footer">
-    <div class="footer-bottom">
-      &copy; myhealthstory.com | Designed by Scott Atkinson & Joann Sy 
-    </div>
+  <div class="footer-bottom">
+    &copy; myhealthstory.com | Designed by Scott Atkinson & Joann Sy 
   </div>
-<!-- // footer -->
+</div>
+<!-- // FOOTER -->
 
 <script type="text/javascript" src="src/scripts.js"></script>  

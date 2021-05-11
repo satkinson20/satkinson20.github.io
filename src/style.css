@@ -1,38 +1,49 @@
 /* Nav-bar */
-.container {
-    margin: 48px 12px;
-    width: 100%;
-}
-.text-title {
-    color: red;
-    font-size: 30px;
-}
-.text-body {
-    color: red;
-    font-size: 18px;
-}
-.text {
-    color: blue;
-    font-size: 24px;
-}
 .navbar {
-    box-shadow: 2px 4px;
-    background-color:rgb(206, 175, 255);
+  box-shadow: 2px 4px;
+  background-color:rgb(206, 175, 255);
 }
+/* Resize logo in navbar */
 .navbar-logo {
-    height: 30px;
-    width: auto;   
+  height: 30px;
+  width: auto;   
 }
 
+/* Add a light purple background color to the top navigation */
 .topnav {
-  color: white;
+    background-color:rgb(206, 175, 255);
+    color: white;
 }
 
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #0f0000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+
+/* Google Translate */
 #google_translate_element {
   height: 52px;
   width: auto;
   color: red;
 }
+
 
 /* Dropdown Button */
 .dropbtn {
@@ -81,6 +92,12 @@
 .show {display:block;}
 
 
+/* General Styling */
+.container {
+  margin: 48px 12px;
+  width: 100%;
+}
+
 li {
     font-size: 16px;
     color: blue;
@@ -92,6 +109,96 @@ li {
   font-size: 40px;
   padding-left: 25px;
 }
+
+.body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
+
+/* Table Styling */
+.table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin:auto;
+  padding: 10;
+  width: 90%;
+  table-layout: fixed;
+}
+
+.table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+.table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+.table th,
+.table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
 /* Home */
 .column {
     float: left;
@@ -123,6 +230,7 @@ li {
     box-align: center;
     padding-left: 100px;
 }
+
 
 /* About-Us */
 .Scott-image {
@@ -175,6 +283,7 @@ li {
     padding-bottom: 10px;
 }
 
+
 /* Contact Us */
 .column-contact {
     float: left;
@@ -183,9 +292,11 @@ li {
     height: 500px; 
     margin-left: 25px;
 }
+
 .container-contact {
   text-align: center;
 }
+
 .button-submit{
     margin-top: 20px;
     margin-left: 400px;
@@ -193,6 +304,7 @@ li {
     border-radius: 10px;
     font-size: 25px;
 }
+
 .column-map {
   float: right;
   width: 48%;
@@ -201,169 +313,13 @@ li {
   height: 500px; 
   margin-right: 25px;
 }
-iframe {
-    margin-left: 0px;
-}
+
 .contact-myhealthstory {
     font-family:'Times New Roman', Times, serif;
     font-size: 20px;
     color: Purple;
     margin-left:250px;
     margin-top: 5px;
-}
-
-/* Grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 3rem;
-  margin: 50px;
-  padding: 50px;
-}
-.grid > div {
-  background: pink;
-  padding: 1rem;
-}
-.grid > div::before {
-  content: "";
-  padding-bottom: 100%;
-  display: block;
-}
-.grid > div {
-  /* ... */
-  display: grid;
-}
-.grid > div::before,
-.grid > div > img {
-  grid-area: 1 / 1 / 2 / 2;
-}
-.grid > div > img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-/* Insurance */
-.text-insurance {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 18px;
-}
-
-.insurance-upload {
-  margin-left: 25px;
-}
-.ins-upload-button {
-  margin-left: 0px;
-  background-color: rgba(255, 255, 255, 0.87);
-  border-radius: 5px;
-  font-size: 12px;
-}
-.insurance-upload-complete {
-  height: 300px;
-  width: auto;
-  box-align: center;
-  padding-right: 25px;
-}
-
-.container-ins {
-  display: none;
-}
-
-.ins-content {
-  padding: 50px;
-}
-.column-ins-1 {
-  float: left;
-  width: 45%;
-  padding: center;
-  margin-left: 25px;
-  height: 425px; 
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 18px;
-  background-color: white;
-
-}
-
-.column-ins-2 {
-  float: right;
-  width: 45%;
-  padding: center;
-  height: 425px; 
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 18px;
-  background-color: white;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.topnav {
-  color: white;
-}
-
-#google_translate_element {
-  height: 52px;
-  width: auto;
-  color: red;
-}
-
-/* Dropdown Button */
-.dropbtn {
-  background: rgb(206, 175, 255);
-  color: black;
-  padding: 16px 36px 16px 36px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  float: right;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
-
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
-
-
-/* FOOTER */
-.footer-bottom {
-  background-color: rgb(206, 175, 255);
-  color: white;
-  text-align: center;    
-  font-family: 16px/26px "Raleway", sans-serif;
-  font-size: 18px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
 }
 
 
@@ -375,7 +331,9 @@ iframe {
 
 a {
   color: #666;
-  text-decoration: none; }
+  text-decoration: none; 
+}
+
   a:hover {
     color: #4FDA8C; }
 
@@ -481,6 +439,7 @@ body {
       text-align: center;
       font-size: 14px; }
 
+/* Replaced original login and signup submit button with button to redirect to overview page */
 .login-button { 
   width: 278px; 
   height: 41px; 
@@ -495,127 +454,51 @@ body {
   cursor: pointer;
 }
 
+/* login and signup button change color from purple to pink when cursor hovers over it */
 .login-button:hover { 
   background-color: #4FDA8C; 
   color: white;
 }
 
-/*NAVBAR FOR LOGIN/CREATE ACCOUNT (CHANGE IF NOT LIKED?)
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color:rgb(206, 175, 255);
-  }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #0f0000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+/* Overview Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 3rem;
+  margin: 50px;
+  padding: 50px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.grid > div {
+  background: pink;
+  padding: 1rem;
 }
 
-
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
+.grid > div::before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
 }
 
-.body {
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.25;
+.grid > div {
+  /* ... */
+  display: grid;
 }
 
-.table {
-  border: 1px solid #ccc;
-  border-collapse: collapse;
-  margin:auto;
-  padding: 10;
-  width: 90%;
-  table-layout: fixed;
+.grid > div::before,
+.grid > div > img {
+  grid-area: 1 / 1 / 2 / 2;
 }
 
-.table caption {
-  font-size: 1.5em;
-  margin: .5em 0 .75em;
+.grid > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.table tr {
-  background-color: #f8f8f8;
-  border: 1px solid #ddd;
-  padding: .35em;
-}
-
-.table th,
-.table td {
-  padding: .625em;
-  text-align: center;
-}
-
-table th {
-  font-size: .85em;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
-
-@media screen and (max-width: 600px) {
-  table {
-    border: 0;
-  }
-
-  table caption {
-    font-size: 1.3em;
-  }
-  
-  table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  
-  table tr {
-    border-bottom: 3px solid #ddd;
-    display: block;
-    margin-bottom: .625em;
-  }
-  
-  table td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    font-size: .8em;
-    text-align: right;
-  }
-  
-  table td::before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  table td:last-child {
-    border-bottom: 0;
-  }
-}
 
 /* Demographics */
-
 .demo-title {
   display: flex;
   justify-content: left;
@@ -647,8 +530,33 @@ table th {
   align-items: center;
 }
 
-/* Providers */
 
+/* Prescriptions */
+.text-prescription {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+.prescription-upload {
+  margin-left: 25px;
+}
+
+.ins-upload-button {
+  margin-left: 0px;
+  background-color: rgba(255, 255, 255, 0.87);
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.prescription-upload-complete {
+  height: 300px;
+  width: auto;
+  box-align: center;
+  padding-right: 25px;
+}
+
+
+/* Providers */
 .provider-upload {
   margin-left: 25px;
 }
@@ -656,6 +564,7 @@ table th {
 #accordion-1 {
   display: none;
 }
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
   background-color: #eee;
@@ -682,6 +591,63 @@ table th {
   overflow: hidden;
 }
 
+
+/* Insurance */
+.text-insurance {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+.insurance-upload {
+  margin-left: 25px;
+}
+
+.ins-upload-button {
+  margin-left: 0px;
+  background-color: rgba(255, 255, 255, 0.87);
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.insurance-upload-complete {
+  height: 300px;
+  width: auto;
+  box-align: center;
+  padding-right: 25px;
+}
+
+.container-ins {
+  display: none;
+}
+
+.ins-content {
+  padding: 50px;
+}
+
+.column-ins-1 {
+  float: left;
+  width: 45%;
+  padding: center;
+  margin-left: 25px;
+  height: 425px; 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  background-color: white;
+}
+
+.column-ins-2 {
+  float: right;
+  width: 45%;
+  padding: center;
+  height: 425px; 
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  background-color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+
 /* Log Out */
 .logout-body {
   height: 100%;
@@ -690,9 +656,11 @@ table th {
   padding: 0;
   cursor: pointer;
 }
+
 #logout-canvas {
   border: 1px soild black;
 }
+
 .logout-text {
   display: inline-block;
   padding: .3em;
@@ -706,24 +674,16 @@ table th {
   border: .075em solid rgba(255,255,255,.1);
 }
 
-/* Prescriptions */
-.text-prescription {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 18px;
-}
 
-.prescription-upload {
-  margin-left: 25px;
+/* FOOTER */
+.footer-bottom {
+  background-color: rgb(206, 175, 255);
+  color: white;
+  text-align: center;    
+  font-family: 16px/26px "Raleway", sans-serif;
+  font-size: 18px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
-.ins-upload-button {
-  margin-left: 0px;
-  background-color: rgba(255, 255, 255, 0.87);
-  border-radius: 5px;
-  font-size: 12px;
-}
-.prescription-upload-complete {
-  height: 300px;
-  width: auto;
-  box-align: center;
-  padding-right: 25px;
-} 

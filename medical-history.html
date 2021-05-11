@@ -1,3 +1,4 @@
+<!-- HEAD -->
 <head>
   <title>My Health Story</title>
   <meta charset="utf-8">
@@ -8,6 +9,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
+<!-- // HEAD -->
+
+<!-- NAVBAR -->
 <nav class="navbar navar-fixed-top">
   <span class="navbar-brand">
     <img class="navbar-logo" src="images/myHealthStory-logo.jpg">
@@ -31,74 +35,75 @@
           <a href="logout.html">Logout</a>
         </div>
     </div> 
+    </div>
   </div>
 </nav>
-<hr>
-<!-- Body and Image -->
+<!-- // NAVBAR -->
+
+<!-- MEDICAL HX BODY -->
 <body>
-    <h1>
-      <p class="title">Medical History</p>
-    </h1>
-    <h3>
-      <p class="hx-title" style="margin-left:25px;">My Information</p></span>
-    </h3>
-    <div class="hx-form" style="margin-left:50px;">
-      <form>
-        <label for="fname">First name:</label>
-        <input type="text" id="fname" name="fname">
-        <label for="mname">Middle name:</label>
-        <input type="text" id="mname" name="mname">
-        <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="birth-sex">Birth Sex:</label>
-          <select id="birth-sex" required>
-            <option value="NA">--</option>
-            <option value="female">Female</option>
-            <option value="intersex">Intersex</option>
-            <option value="male">Male</option>
-          </select>
-        <label for="birthday">Birthday:</label>
-        <input type="date" id="birthday" name="birthday" ><br>
-        <label for="age">Age:</label>
-        <input type="number" id="age" name="age" ><br>
-        <label for="gender-identity">Gender Identity:</label>
-        <input type="text" id="gender-identity" name="gender-identity">
-        <label for="pronouns">Pronouns:</label>
-        <input type="text" id="pronouns" name="pronouns"><br>
-      </form>
-    </div>
-    <hr>
-    <div style="margin-left:25px;">
+  <h1>
+    <p class="title">Medical History</p><hr>
+  </h1>
+  <h3>
+    <p class="hx-title" style="margin-left:25px;">My Information</p></span>
+  </h3>
+  <div class="hx-form" style="margin-left:50px;">
+    <form>
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname">
+      <label for="mname">Middle name:</label>
+      <input type="text" id="mname" name="mname">
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br>
+      <label for="birth-sex">Birth Sex:</label>
+        <select id="birth-sex" required>
+          <option value="NA">--</option>
+          <option value="female">Female</option>
+          <option value="intersex">Intersex</option>
+          <option value="male">Male</option>
+        </select>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday" ><br>
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" ><br>
+      <label for="gender-identity">Gender Identity:</label>
+      <input type="text" id="gender-identity" name="gender-identity">
+      <label for="pronouns">Pronouns:</label>
+      <input type="text" id="pronouns" name="pronouns"><br>
+    </form>
+  </div>
+  <hr>
+  <div style="margin-left:25px;">
     <h3>
       <p class="hx-title">My History</p></span>
     </h3>
-    </div>
-    <div style="margin-left:50px;">
-      <input type="radio" id="medHx" name="med-hx">
-      <label for="hbp">Hypertension:</label><br>
-      <input type="radio" id="medHx" name="med-hx">
-      <label for="lbp">Hypotension:</label><br>
-      <input type="radio" id="medHx" name="med-hx">
-      <label for="hbp">Glaucoma:</label><br>
-      <input type="radio" id="medHx" name="med-hx">
-      <input type="text" id="mname" name="mname"><br>
-      <input type="radio" id="medHx" name="med-hx">
-      <input type="text" id="mname" name="mname">
-    </div>
-    <div class="myDemo-button">
-      <button onclick="myDemo()">Save</button>
-      <p id="myDemo-save"></p>
-      </div>
-
-</body>
-<!-- // Body and Image -->
-
-<!-- footer -->
-<div class="footer">
-    <div class="footer-bottom">
-      &copy; myhealthstory.com | Designed by Scott Atkinson & Joann Sy 
-    </div>
   </div>
-  <!-- // footer -->
+  <div style="margin-left:50px;">
+    <input type="radio" id="medHx" name="med-hx">
+    <label for="hbp">Hypertension:</label><br>
+    <input type="radio" id="medHx" name="med-hx">
+    <label for="lbp">Hypotension:</label><br>
+    <input type="radio" id="medHx" name="med-hx">
+    <label for="hbp">Glaucoma:</label><br>
+    <input type="radio" id="medHx" name="med-hx">
+    <input type="text" id="mname" name="mname"><br>
+    <input type="radio" id="medHx" name="med-hx">
+    <input type="text" id="mname" name="mname">
+  </div>
+  <div class="myDemo-button">
+    <button onclick="myDemo()">Save</button>
+    <p id="myDemo-save"></p>
+  </div>
+</body>
+<!-- // MEDICAL HX BODY -->
 
-  <script type="text/javascript" src="src/scripts.js"></script>  
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-bottom">
+    &copy; myhealthstory.com | Designed by Scott Atkinson & Joann Sy 
+  </div>
+</div>
+<!-- // FOOTER -->
+
+<script type="text/javascript" src="src/scripts.js"></script>  

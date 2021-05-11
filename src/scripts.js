@@ -1,26 +1,10 @@
-jQuery(document).ready(function($) {
-	tab = $('.tabs h3 a');
-
-	tab.on('click', function(event) {
-		event.preventDefault();
-		tab.removeClass('active');
-		$(this).addClass('active');
-
-		tab_content = $(this).attr('href');
-		$('div[id$="tab-content"]').removeClass('active');
-		$(tab_content).addClass('active');
-	});
-});
-
 /* Navbar */
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
 function myFunction() {
 	document.getElementById("myDropdown").classList.toggle("show");
   }
   
-  // Close the dropdown menu if the user clicks outside of it
+// Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
 	if (!event.target.matches('.dropbtn')) {
 	  var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -35,22 +19,75 @@ function myFunction() {
   }
 
 /* Translation */
+// Click language button to see drop down of languages, page will translate to selected language
 function googleTranslateElementInit() {
 	new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
   }
 
+/* Login Sign Up */
+// Toggle to show either sign up or login tab
+jQuery(document).ready(function($) {
+	tab = $('.tabs h3 a');
+
+	tab.on('click', function(event) {
+		event.preventDefault();
+		tab.removeClass('active');
+		$(this).addClass('active');
+
+		tab_content = $(this).attr('href');
+		$('div[id$="tab-content"]').removeClass('active');
+		$(tab_content).addClass('active');
+	});
+});
+
 /* Contact Us */
+// Click submit for a pop up confirmation that inquiry has been confirmed
 function contactUs() {
 	(confirm("Thank you for your inquiry. We will respond to you within 2 business days!")) 
 	 document.getElementById("inquiry-submit").innerHTML = txt;
    }
 
- /* Appointment */
+/* Appointment */
+// Click submit for a pop up confirmation that appointment has been added  
 function MakeAppointment() {
 	(confirm("Your appointment has been successfully added!")) 
 	 document.getElementById("make-appointment").innerHTML = txt;
    }  
+
+/* Demographics */
+// Click save for a pop up to confirm changes or cancel 
+function myDemo() {
+	var txt;
+	if (confirm("Press OK to Confirm Changes!")) {
+	  txt = "Your updates have been saved!";
+	} else {
+	  txt = "No changes have been made.";
+	}
+	document.getElementById("myDemo-save").innerHTML = txt;
+  }
+
+/* Daily Log Blood Pressure Tool */
+// Click submit to see whether blood pressure entered falls under normal, hbp (stage 1), hbp (stage 2), or hypertensive crisis
+function showresult(){
+	var n1=parseFloat(document.getElementById('num1').value);
+	var n2=parseFloat(document.getElementById('num2').value);
+
+	var message;
+	if (n1>180 || n2>120) {
+		message="Hypertensive Crisis, please seek emergency care!";
+	}	else if (n1>=140 || n2>=90) {
+		message="High Blood Pressure (Stage 2)";
+	}	else if (130<=n1 || 80<=n2) {
+		message="High Blood Pressure (Stage 1)";
+	}	else if (n1<120 && n2<80) {
+		message="Normal";
+	}
+
+	document.getElementById('result').innerHTML=message;	
+	}
+
 /* Providers */
+// Click on accordion labels to see the hidden dropdown info
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -70,63 +107,15 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+// Click on submit to toggle and show the hidden accordion of a primary care physician
 function showPCP() {
 	document.getElementById("accordion-1").classList.toggle("show");
   }
 
 /* Insurance */
-
+// Click on submit to toggle and show the hidden insurance cards
 function showIns() {
 	document.getElementById("container-ins").classList.toggle("show");
-  }
-
-
-/* Daily Log */
-function showresult(){
-	var n1=parseFloat(document.getElementById('num1').value);
-	var n2=parseFloat(document.getElementById('num2').value);
-
-	var message;
-	if (n1>180 || n2>120) {
-		message="Hypertensive Crisis, please seek emergency care!";
-	}	else if (n1>=140 || n2>=90) {
-		message="High Blood Pressure (Stage 2)";
-	}	else if (130<=n1 || 80<=n2) {
-		message="High Blood Pressure (Stage 1)";
-	}	else if (n1<120 && n2<80) {
-		message="Normal";
-	}
-
-	document.getElementById('result').innerHTML=message;	
-	}
-
-function saveresult(){
-	var n1=parseFloat(document.getElementById('bloodpressure').value);
-	var n2=parseFloat(document.getElementById('bloodsugar').value);
-	var n3=parseFloat(document.getElementById('heartrate').value);
-
-	document.getElementById('bloodpressure-1').value=n1;	
-
-	document.getElementById('bloodsugar-1').value=n2;	
-	
-	document.getElementById('heartrate-1').value=n3;	
-	}
-
-/* Contact Us */
-function contactUs() {
-	(confirm("Thank you for your inquiry. We will respond to you within 2 business days!")) 
-	 document.getElementById("inquiry-submit").innerHTML = txt;
-   }
-
-/* Demographics */
-function myDemo() {
-	var txt;
-	if (confirm("Press OK to Confirm Changes!")) {
-	  txt = "Your updates have been saved!";
-	} else {
-	  txt = "No changes have been made.";
-	}
-	document.getElementById("myDemo-save").innerHTML = txt;
   }
 
 /* Logout */
@@ -245,7 +234,6 @@ window.requestAnimFrame = (function() {
         window.setTimeout(callback, 1000 / 60);
      };
 })();
-
 
 // Our Frame function
 var frame = function () {

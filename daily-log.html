@@ -1,3 +1,4 @@
+ <!-- HEAD -->
 <head>
   <title>My Health Story</title>
   <meta charset="utf-8">
@@ -8,6 +9,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
+<!-- // HEAD -->
+
+<!-- NAVBAR -->
 <nav class="navbar navar-fixed-top">
   <span class="navbar-brand">
     <img class="navbar-logo" src="images/myHealthStory-logo.jpg">
@@ -31,109 +35,111 @@
           <a href="logout.html">Logout</a>
         </div>
     </div> 
-  </div>
-</nav>
-
- <!-- Body and Image -->
-<body>
-    <h1>
-      <p class="title">Daily Log</p>
-    </h1>
-<hr>
-<div class="bp-tool-kit" style="margin-left: 25px; font-family:'Times New Roman', Times, serif;">
-  <h2><p>Blood Pressure Tool</p></h2>
-  <div>
-    <table class="bp-tool" style="margin-left: 25px;">
-      <tr>
-      <td>Systolic (mmHg)</td>
-      <td>Diastolic (mmHg)</td>
-      <td>Result</td>
-      </tr>
-      <br>
-      <tr>
-      <td><input name="number1" type="text" size=10 id='num1'/></td>
-      <td><input name="number2" type="text" size=10 id='num2'/></td>
-      <td><p id="result"></p></td>
-      </tr>
-      <tr>
-      <td colspan="3"><br>
-      <button onclick="showresult()">Submit</button>
-      </td>
-      </tr>
-    </table>    
-  </div>
-</div>
-<hr>
-<div>
-  <h2 style="margin-left: 25px; font-family:'Times New Roman', Times, serif;">Log Entry</h2>
-</div>
-<div class="dailylog" style="margin: 50px;">
-  <label for="date-log">Date:</label>
-  <input type="date" id="dateLog" name="date-log" required><br><br>
-  <label for="time-log">Time:</label>
-  <input type="time" id="timeLog" name="time-log"><br><br>
-  <label for="bloodpressure">Blood Pressure:</label>
-  <input type="text" id="bloodpressure" name="bloodpressure" placeholder="xxx/xx"><br><br>
-  <label for="bloodsugar">Blood Sugar:</label>
-  <input type="number" id="bloodsugar" name="bloodsugar"><br><br>
-  <label for="heartrate">Heart Rate:</label>
-  <input type="number" id="heartrate" name="heartrate"><br><br>
-  <button onclick="showLog()">Submit</button>
-  <p id=log-content></p>
-</div>
-<hr>
-<h2 style="margin-left: 25px; font-family:'Times New Roman', Times, serif;">My Daily Log</h2>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="date-log">Date</th>
-      <th scope="time-log">Time</th>
-      <th scope="bp-log">Blood Pressure</th>
-      <th scope="glu-log">Blood Sugar</th>
-      <th scope="hr-log">Heart Rate</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td data-label="date-log">05/9/21</td>
-      <td data-label="time-log">13:00</td>
-      <td data-label="bp-log">119/79</td>
-      <td data-label="glu-log">90</td>
-      <td data-label="hr-log">70</td>
-    </tr>
-    <tr>
-      <td data-label="date-log">05/9/21</td>
-      <td data-label="time-log">07:00</td>
-      <td data-label="bp-log">135/85</td>
-      <td data-label="glu-log">80</td>
-      <td data-label="hr-log">60</td>
-    </tr>
-    <tr>
-      <td data-label="date-log">05/8/21</td>
-      <td data-label="time-log">13:00</td>
-      <td data-label="bp-log">120/80</td>
-      <td data-label="glu-log">95</td>
-      <td data-label="hr-log">67</td>
-    </tr>
-    <tr>
-      <td data-label="date-log">05/8/21</td>
-      <td data-label="time-log">07:00</td>
-      <td data-label="bp-log">128/84</td>
-      <td data-label="glu-log">82</td>
-      <td data-label="hr-log">63</td>
-    </tr>
-  </tbody>
-</table>
-</body>
-<br>br>
-<!-- // Body and Image -->
-
-<!-- footer -->
-<div class="footer">
-    <div class="footer-bottom">
-      &copy; myhealthstory.com | Designed by Scott Atkinson & Joann Sy 
     </div>
   </div>
-  <!-- // footer -->
+</nav>
+<!-- // NAVBAR -->
+
+<!-- BP TOOL LOG AND TABLE BODY -->
+<body>
+  <h1>
+    <p class="title">Daily Log</p><hr>
+  </h1>
+  <div class="bp-tool-kit" style="margin-left: 25px; font-family:'Times New Roman', Times, serif;">
+    <h2><p>Blood Pressure Tool</p></h2>
+    <div>
+      <table class="bp-tool" style="margin-left: 25px;">
+        <tr>
+          <td>Systolic (mmHg)</td>
+          <td>Diastolic (mmHg)</td>
+          <td>Result</td>
+        </tr>
+        <br>
+        <tr>
+          <td><input name="number1" type="text" size=10 id='num1'/></td>
+          <td><input name="number2" type="text" size=10 id='num2'/></td>
+          <td><p id="result"></p></td>
+        </tr>
+        <tr>
+          <td colspan="3"><br>
+          <button onclick="showresult()">Submit</button>
+        </td>
+        </tr>
+      </table>    
+    </div>
+  </div>
+  <hr>
+  <div>
+    <h2 style="margin-left: 25px; font-family:'Times New Roman', Times, serif;">Log Entry</h2>
+  </div>
+  <div class="dailylog" style="margin: 50px;">
+    <label for="date-log">Date:</label>
+    <input type="date" id="dateLog" name="date-log" required><br><br>
+    <label for="time-log">Time:</label>
+    <input type="time" id="timeLog" name="time-log"><br><br>
+    <label for="bloodpressure">Blood Pressure:</label>
+    <input type="text" id="bloodpressure" name="bloodpressure" placeholder="xxx/xx"><br><br>
+    <label for="bloodsugar">Blood Sugar:</label>
+    <input type="number" id="bloodsugar" name="bloodsugar"><br><br>
+    <label for="heartrate">Heart Rate:</label>
+    <input type="number" id="heartrate" name="heartrate"><br><br>
+    <button onclick="showLog()">Submit</button>
+    <p id=log-content></p>
+  </div>
+  <hr>
+  <h2 style="margin-left: 25px; font-family:'Times New Roman', Times, serif;">My Daily Log</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="date-log">Date</th>
+        <th scope="time-log">Time</th>
+        <th scope="bp-log">Blood Pressure</th>
+        <th scope="glu-log">Blood Sugar</th>
+        <th scope="hr-log">Heart Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="date-log">05/9/21</td>
+        <td data-label="time-log">13:00</td>
+        <td data-label="bp-log">119/79</td>
+        <td data-label="glu-log">90</td>
+        <td data-label="hr-log">70</td>
+      </tr>
+      <tr>
+        <td data-label="date-log">05/9/21</td>
+        <td data-label="time-log">07:00</td>
+        <td data-label="bp-log">135/85</td>
+        <td data-label="glu-log">80</td>
+        <td data-label="hr-log">60</td>
+      </tr>
+      <tr>
+        <td data-label="date-log">05/8/21</td>
+        <td data-label="time-log">13:00</td>
+        <td data-label="bp-log">120/80</td>
+        <td data-label="glu-log">95</td>
+        <td data-label="hr-log">67</td>
+      </tr>
+      <tr>
+        <td data-label="date-log">05/8/21</td>
+        <td data-label="time-log">07:00</td>
+        <td data-label="bp-log">128/84</td>
+        <td data-label="glu-log">82</td>
+        <td data-label="hr-log">63</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+<!-- //BP TOOL LOG AND TABLE BODY -->
+
+<br><br>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-bottom">
+    &copy; myhealthstory.com | Designed by Scott Atkinson & Joann Sy 
+  </div>
+</div>
+<!-- // FOOTER -->
 
 <script type="text/javascript" src="src/scripts.js"></script>  

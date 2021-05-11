@@ -1,3 +1,4 @@
+<!-- HEAD -->
 <head>
   <title>My Health Story</title>
   <meta charset="utf-8">
@@ -8,6 +9,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
+<!-- // HEAD -->
+
+<!-- NAVBAR -->
 <nav class="navbar navar-fixed-top">
   <span class="navbar-brand">
     <img class="navbar-logo" src="images/myHealthStory-logo.jpg">
@@ -31,42 +35,46 @@
           <a href="logout.html">Logout</a>
         </div>
     </div> 
+    </div>
   </div>
 </nav>
- 
-<!-- Body and Image -->
+<!-- // NAVBAR -->
+
+<!-- MEDICAL REPORT BODY -->
 <body>
-    <h1>
-      <p class="title">Medical Reports</p>
-    </h1>
-    <div class="container-reports" style="margin: 50px;">
-      <h2>
-        <p>Request Medical Records from Providers</p>
-      </h2>
-      <h4>
-        <br><p>Requesting your medical records to store them with My Health Story has never been easier. Just fill out the <a href="https://eforms.com/images/2016/10/California-HIPAA-Medical-Release-Form.pdf" target="_blank">Medical Records Release Authorization Form </a>and send it in to your provider's clinic or hospital. Once they receive and approve it, they will send us your medical records and we will upload it here in your profile. It's just that <i>simple</i>.</p>
-      </h4>
-    </div>
-    <div class="container-reports" style="margin: 50px;">
-      <h2>
-        <p>Upload Your Medical Records</p>
-      </h2><br>
-      <label for="report-type">Report Type:</label>
-      <input type="text" id="specialty" name="specialty" required><br><br>
-      <label for="providers-name">Provider's Name:</label>
-      <input type="text" id="providers-name" name="providers-name" required><br><br>
-      <input type="file" id="myFile" name="filename"><br>
-      <button class="submit">Submit</button>
-    </div>
-</body>
-<!-- // Body and Image -->
-<br><br>
-<!-- footer -->
-<div class="footer">
-    <div class="footer-bottom">
-      &copy; myhealthstory.com | Designed by Scott Atkinson & Joann Sy
-    </div>
+  <h1>
+    <p class="title">Medical Reports</p><hr>
+  </h1>
+  <div class="container-reports" style="margin: 50px;">
+    <h2>
+      <p>Request Medical Records from Providers</p>
+    </h2>
+    <h4>
+      <br><p>Requesting your medical records to store them with My Health Story has never been easier. Just fill out the <a href="https://eforms.com/images/2016/10/California-HIPAA-Medical-Release-Form.pdf" target="_blank">Medical Records Release Authorization Form </a>and send it in to your provider's clinic or hospital. Once they receive and approve it, they will send us your medical records and we will upload it here in your profile. It's just that <i>simple</i>.</p>
+    </h4>
   </div>
-  <!-- // footer -->
+  <div class="container-reports" style="margin: 50px;">
+    <h2>
+      <p>Upload Your Medical Records</p>
+    </h2><br>
+    <label for="report-type">Report Type:</label>
+    <input type="text" id="specialty" name="specialty" required><br><br>
+    <label for="providers-name">Provider's Name:</label>
+    <input type="text" id="providers-name" name="providers-name" required><br><br>
+    <input type="file" id="myFile" name="filename"><br>
+    <button class="submit">Submit</button>
+  </div>
+</body>
+<!-- // MEDICAL REPORT BODY -->
+
+<br><br>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-bottom">
+    &copy; myhealthstory.com | Designed by Scott Atkinson & Joann Sy
+  </div>
+</div>
+<!-- // FOOTER -->
 
 <script type="text/javascript" src="src/scripts.js"></script>
